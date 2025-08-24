@@ -7,8 +7,7 @@ import Context from "./assets/utils/Context.jsx";
 createRoot(document.getElementById("root")).render(
   <Context>
     <BrowserRouter>
-      <App></App>
+        <App></App>
     </BrowserRouter>
-    
   </Context>
 );
