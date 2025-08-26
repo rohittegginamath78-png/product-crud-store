@@ -10,7 +10,7 @@ import Context from "./assets/utils/Context";
 function App() {
   return (
     <Context>
-      <div className=" h-screen w-screen flex">
+      <div className=" h-screen w-screen  flex-col flex">
         
         <Routes>
           <Route path="/" element={<Home />} />
