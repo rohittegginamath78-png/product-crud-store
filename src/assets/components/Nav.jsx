@@ -1,11 +1,14 @@
-import React from 'react'
+import React, { useContext } from "react";
 
 const Nav = () => {
+  const [products] = useContext(ProductContext);
+  const distinct_category = products && products.reduce((acc, cv) => []);
+
   return (
     <nav className="w-[18%] h-full bg-white shadow-md flex flex-col items-center pt-6 rounded-r-2xl">
       {/* Button */}
-      <a 
-        href="/" 
+      <a
+        href="/"
         className="w-[80%] text-center px-5 py-3 mb-5 rounded-xl bg-blue-500 text-white font-semibold 
         shadow-sm hover:bg-blue-600 transition-all"
       >
@@ -34,7 +37,7 @@ const Nav = () => {
         </li>
       </ul>
     </nav>
-  )
-}
+  );
+};
 
-export default Nav
+export default Nav;
